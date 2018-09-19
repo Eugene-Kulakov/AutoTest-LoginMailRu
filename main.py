@@ -14,8 +14,8 @@ def main():
     newLetter = NewLetter(driver)
     newLetter.openNewLetter()
     newLetter.setAddressTo(secret.addressTo)
-    newLetter.setSubject('Тест для quality-lab')
-    newLetter.setText('\tПривет, Лаборатория качества!\nЯ хочу работать у вас')
+    newLetter.setSubject('Тест Python, Selenium, Page Object')
+    newLetter.setText('\tТекст письма.\nЭто письмо отправлено автоматически, не отвечайте на него.')
     newLetter.clickSendButton()
     if newLetter.checkSend():
         print('Письмо отправлено')
